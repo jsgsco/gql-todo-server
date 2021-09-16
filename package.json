@@ -19,6 +19,7 @@
     "nodemon": "^2.0.12"
   },
   "scripts": {
+    "start": "node src/index.js --exec babel-node",
     "dev": "nodemon src/index.js --exec babel-node"
   }
 }
