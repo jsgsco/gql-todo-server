@@ -12,14 +12,9 @@
     "mongoose": "^6.0.5"
   },
   "devDependencies": {
-    "@babel/cli": "^7.15.4",
-    "@babel/core": "^7.15.5",
-    "@babel/node": "^7.15.4",
-    "@babel/preset-env": "^7.15.6",
     "nodemon": "^2.0.12"
   },
   "scripts": {
-    "start": "nodemon index.js --exec babel-node",
-    "dev": "nodemon src/index.js --exec babel-node"
+    "start": "nodemon index.js"
   }
 }

@@ -1,7 +1,7 @@
-import User from "../models/User";
-import Task from '../models/Task'
-import bcryptjs from 'bcryptjs';
-import jwt from "jsonwebtoken";
+const User = require("../models/User");
+const Task = require('../models/Task');
+const bcryptjs = require('bcryptjs');
+const jwt = require("jsonwebtoken");
 require('dotenv').config( { path: '.env' } );
 
 const createToken = (user, key, expiresIn) => {
@@ -124,4 +124,4 @@ const resolvers = {
     }
 };
 
-export default resolvers;
+module.exports = resolvers;

@@ -1,8 +1,8 @@
-import { ApolloServer } from 'apollo-server';
-import typeDefs from './src/db/schema';
-import resolvers from './src/db/resolvers';
-import connectDB from './src/config/db';
-import jwt from 'jsonwebtoken';
+const { ApolloServer } = require('apollo-server');
+const typeDefs = require('./src/db/schema') 
+const resolvers = require('./src/db/resolvers');
+const connectDB = require('./src/config/db');
+const jwt = require('jsonwebtoken');
 require('dotenv').config( { path: '.env' } );
 
 connectDB();
