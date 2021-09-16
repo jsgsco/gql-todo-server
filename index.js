@@ -1,7 +1,7 @@
 import { ApolloServer } from 'apollo-server';
-import typeDefs from './db/schema';
-import resolvers from './db/resolvers';
-import connectDB from './config/db';
+import typeDefs from './src/db/schema';
+import resolvers from './src/db/resolvers';
+import connectDB from './src/config/db';
 import jwt from 'jsonwebtoken';
 require('dotenv').config( { path: '.env' } );
 
@@ -29,6 +29,6 @@ const server = new ApolloServer({
     }
 });
 
-server.listen({ port: process.env.PORT || 4000 }).then( ({url}) => {
+server.listen().then( ({url}) => {
     console.log(`${url}`)
 } );
